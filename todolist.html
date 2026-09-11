@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="todo">
+    <button class="add">Add</button>
+    <button class="reset">reset</button>
+    <ul class="todolist"></ul>
+
+
+    <script>
+         
+         const handleAdd=()=>{
+            const text=todo.value;
+
+            const item=document.createElement("li");
+            item.innerText=text;
+            // list.append(item);
+            list.prepend(item);
+            todo.value="";
+         }
+
+         const handleReset=()=>{
+            list.innerText=""
+         }
+
+        const todo =document.querySelector("#todo");
+        const button =document.querySelector(".add");
+        const list =document.querySelector(".todolist");
+        const resetbutton =document.querySelector(".reset");
+        resetbutton.addEventListener("click",handleReset)
+
+        button.addEventListener("click",handleAdd);
+
+
+    </script>
+</body>
+</html>
