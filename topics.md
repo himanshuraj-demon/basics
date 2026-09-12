@@ -9,3 +9,6 @@ https://tailwindcss.com/docs/installation/play-cdn
 https://developer.mozilla.org/en-US/docs/Web/API/Node
 
 https://www.netflix.com/in/
+
+
+document.body.contentEditable = true;
